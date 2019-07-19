@@ -37,15 +37,15 @@
         <div class="form-space">
             <p><b><h2>Create New Account at Ungineering</h2></b></p>
             <div class="form-container">
-                <form class="form" method="post">
+                <form class="form" method="post" action="registration_submit.php">
                     <label for="name"><b>Name</b></label>
                     <input type="text"  name="name" required><br/>
                     <label for="email"><b>Email</b></label>
                     <input type="text"  name="email" required><br/>
                     <label for="psw"><b>Password</b></label>
-                    <input type="password"  name="psw" required><br/>                       
+                    <input type="password"  name="psw" class="psw" required><br/>                       
                     <label for="psw"><b>Confirm Password</b></label>
-                    <input type="password"  name="con-psw" required><br/> 
+                    <input type="password"  name="con-psw" class="con-psw"required><br/> 
                     <button type="submit" class="ca-btn"><b>Create Account</b></button>
                     <p><font color="FF4500"><u>Existing user , Login</u></p> 
                 </form>                  
@@ -81,5 +81,7 @@
             
         </div>
     </div>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript"src="js/psw-confirmpsw.js"></script>
 </body>
 </html>

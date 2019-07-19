@@ -8,7 +8,7 @@ CREATE TABLE users(
     password VARCHAR(255) NOT NULL,
     college VARCHAR(255),
     phone_no INT,
-    PRIMARY KEY(id)
+    PRIMARY KEY(ID)
 );
     
 CREATE TABLE posts(
