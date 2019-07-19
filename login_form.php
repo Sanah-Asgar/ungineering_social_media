@@ -1,5 +1,7 @@
+<html>
 <?php
     session_start();
+    echo "1";
 ?>
 <?php
     $hostname = "localhost";
@@ -24,18 +26,19 @@
     $p = 0;
     
     while($row=mysqli_fetch_array($result)){
-        if($email===$row['email'] $$ $password===$row['password']){
+        if($email===$row['email'] && $password===$row['password']){
             $p++;
             break;
         }
     }
     if($p>0){
-        echo "Welcome" .row['name'];
+        echo "Welcome" .$row['name'];
+        ?>
+        <a href = "home_loggedin.html">Click here</a>
+        <?php
         $_SESSION['id'] = $row['id'];
         $_SESSION['name'] = $row['name'];
-        ?>
-        <a href = "home_loggedin.html"></a>
-        <?php
+        
     }
     else{
         echo "Login Failed";
@@ -44,4 +47,5 @@
     
     mysqli_close($conn);    
 ?>
+<html>
     

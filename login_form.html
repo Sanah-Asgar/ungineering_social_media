@@ -36,14 +36,14 @@
         
         <div class="form-space">
             <p><b><h2>Login into Ungineering Account</h2></b></p>
-            <div class="form-container" action="login_submit.php">
-                <form class="form" method="post">
+            <div class="form-container" >
+                <form class="form" method="post" action="login_form.php">
                     <label for="email"><b>Email</b></label>
                     <input type="text"  name="email" required><br/>
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password"  name="psw" required><br/>                       
+                    <label for="password"><b>Password</b></label>
+                    <input type="password"  name="password" required><br/>                       
                      
-                    <button type="submit" class="login-btn"><b>Login</b></button>
+                    <button type="submit" class="login-btn" name = "submit" value = "Submit"><b>Login</b></button>
                     <p><font color="FF4500"><u>New User , Create Account</u></p> 
                 </form>                  
             </div>
